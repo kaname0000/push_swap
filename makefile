@@ -6,7 +6,7 @@
 #    By: okaname <okaname@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/19 14:57:27 by okaname           #+#    #+#              #
-#    Updated: 2025/01/19 16:22:30 by okaname          ###   ########.fr        #
+#    Updated: 2025/01/29 21:47:31 by okaname          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,14 @@ LIBFTDIR = ./libft
 LIBFT = $(LIBFTDIR)/libft.a
 
 SRCS =  main.c \
-		ft_make_array.c \
+		make_list/ft_make_list.c \
+		make_list/utils.c \
+		operations/push.c \
+		operations/swap.c \
+		operations/rotate.c \
+		sort_algo/sort.c \
+		sort_algo/sort2.c \
+
 
 OBJS = $(SRCS:.c=.o)
 
@@ -33,7 +40,7 @@ $(NAME): $(LIBFT) $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $@
 
 $(LIBFT):
-	make -C $(LIBFTDIR)
+	make bonus -C $(LIBFTDIR) 
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
