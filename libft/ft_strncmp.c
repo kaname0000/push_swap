@@ -6,7 +6,7 @@
 /*   By: okaname <okaname@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:47:59 by okaname           #+#    #+#             */
-/*   Updated: 2024/11/05 18:04:13 by okaname          ###   ########.fr       */
+/*   Updated: 2025/02/08 20:15:15 by okaname          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-// int	ft_strncmp(const char *s1, const char *s2, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 // int	main(void)
 // {
@@ -40,11 +40,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	printf("Comparison result (first 5 characters): %d\n", result); // 結果: 0
 // 	result = ft_strncmp(str1, str2, 10);
 // 	printf("Comparison result (first 10 characters): %d\n", result);
-// 		// 結果: < 0 (負の値)
+// 	// 結果: < 0 (負の値)
 // 	result = ft_strncmp(str1, "Hello", 5);
 // 	printf("Comparison result (same strings): %d\n", result); // 結果: 0
 // 	result = ft_strncmp(str1, "Hell", 5);
 // 	printf("Comparison result (different lengths): %d\n", result);
-// 		// 結果: > 0 (正の値)
+// 	// 結果: > 0 (正の値)
 // 	return (0);
 // }

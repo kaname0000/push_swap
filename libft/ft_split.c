@@ -6,7 +6,7 @@
 /*   By: okaname <okaname@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:54:36 by okaname           #+#    #+#             */
-/*   Updated: 2025/01/19 16:09:33 by okaname          ###   ########.fr       */
+/*   Updated: 2025/02/08 14:16:29 by okaname          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,6 @@ static char	*ft_strdup_alp(char const *src, int num)
 	{
 		return (NULL);
 	}
-	i = 0;
 	while (i < num)
 	{
 		dest[i] = src[i];
@@ -126,12 +125,13 @@ char	**ft_split(char const *s, char c)
 // 	char	**result;
 
 // 	// const char	*s = "Hello,World,This,Is,A,Test";
-// 	result = ft_split("  tripouille  42  ", ' ');
-// 	for (int i = 0; result[i] != NULL; i++)
-// 	{
-// 		printf("Split[%d]: %s\n", i, result[i]);
-// 		free(result[i]); // 各要素のメモリを解放
-// 	}
+// 	result = ft_split(" ", ' ');
+// for (int i = 0; result[i] != NULL; i++)
+// {
+// 	printf("Split[%d]: %s\n", i, result[i]);
+// 	free(result[i]); // 各要素のメモリを解放
+// }
+// 	printf("%s\n", result[0]);
 // 	free(result); // 配列自体のメモリを解放
 // 	return (0);
 // }
